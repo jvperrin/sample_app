@@ -16,3 +16,4 @@
 
 # Ignore .deb files.
 *.deb
+*.deb.1
