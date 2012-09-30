@@ -15,4 +15,4 @@
 /tmp
 
 # Ignore .deb files.
-/*.deb
+*.deb
