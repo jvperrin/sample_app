@@ -17,3 +17,9 @@
 # Ignore .deb files.
 *.deb
 *.deb.1
+
+# Ignore SSL files.
+server.crt
+server.csr
+server.key
+server.orig.key
