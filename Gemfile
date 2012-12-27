@@ -6,6 +6,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'jquery-rails', '2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,8 +19,6 @@ group :development, :test do
   gem 'spork', '0.9.2'
 end
 
-gem 'annotate', '2.5.0', group: :development
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,8 +29,6 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 end
-
-gem 'jquery-rails', '2.0.2'
 
 # Test gems
 group :test do
