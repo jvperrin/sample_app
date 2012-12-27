@@ -31,6 +31,24 @@ describe "Static pages" do
           page.should have_selector("li##{item.id}", text: item.content)
         end
       end
+
+      it "should contain the proper number of microposts" do
+        page.should have_content("#{user.microposts.count} microposts")
+        user.microposts.find(1).destroy
+        visit root_path
+        page.should have_content("1 micropost")
+      end
+
+      it "should paginate the micropost feed when there are more than 30" do
+        28.times do |n|
+          FactoryGirl.create(:micropost, user: user, content: "#{n} - micropost")
+        end
+        visit root_path
+        page.should_not have_selector('div.pagination')
+        FactoryGirl.create(:micropost, user: user, content: "30th micropost")
+        visit root_path
+        page.should have_selector('div.pagination')
+      end
     end
   end
 

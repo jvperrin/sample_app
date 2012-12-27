@@ -80,6 +80,8 @@ GEM
       railties (>= 3.2.0, < 5.0)
       thor (~> 0.14)
     json (1.7.5)
+    launchy (2.1.2)
+      addressable (~> 2.3)
     libnotify (0.5.9)
     libwebsocket (0.1.5)
       addressable
@@ -178,6 +180,7 @@ DEPENDENCIES
   guard-rspec (= 1.2.1)
   guard-spork (= 1.2.0)
   jquery-rails (= 2.0.2)
+  launchy
   libnotify (= 0.5.9)
   pg (= 0.12.2)
   rails (= 3.2.8)
