@@ -17,7 +17,6 @@
       <%= render 'layouts/footer' %>
       <br>
       <% if Rails.env.development? %>
-        <pre class="debug_dump">Cookie Jar: <%= request.cookie_jar() %></pre>
         <%= debug(params) %>
       <% end %>
     </div>
